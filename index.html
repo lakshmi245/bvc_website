@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Interactive department explorer for Bonam Venkata Chalamayya Engineering College, Odalarevu, Andhra Pradesh.">
+    <title>Bonam Venkata Chalamayya Engineering College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="bg" aria-hidden="true"></canvas>
+    <canvas id="fx" aria-hidden="true"></canvas>
+    <div class="scroll-progress" id="scrollBar" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <span class="crest" aria-hidden="true">BV</span>
+                <div>
+                    <h1>Bonam Venkata Chalamayya Engineering College</h1>
+                    <p>Odalarevu, Andhra Pradesh</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button id="themeToggle" class="icon-btn" type="button"
+                        aria-label="Switch to light theme">☀️</button>
+            </div>
+        </div>
+        <p class="tagline">Explore &bull; Select &bull; Discover</p>
+    </header>
+
+    <nav class="stepper" aria-label="Your progress">
+        <ol id="stepper"></ol>
+    </nav>
+
+    <main id="stage" class="stage"></main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Bonam Venkata Chalamayya Engineering College</p>
+        <p>Designed by Lakshmi KOTHA &middot; Roll No. 28</p>
+        <p class="footer-hint">Tip: press <kbd>Esc</kbd> to go back &middot; press <kbd>/</kbd> to search roll numbers</p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <noscript>
+        <p class="noscript">This page needs JavaScript enabled to work.</p>
+    </noscript>
+
+    <script src="resume.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
